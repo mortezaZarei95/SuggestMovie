@@ -1,0 +1,67 @@
+@keyframes loading {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0.5;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.loading div {
+    position: relative;
+    width: 20.57px;
+    height: 74.8px;
+    display: block;
+    float: left;
+    animation: loading 0.9433962264150942s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+}
+
+.loading div:nth-child(1) {
+    background: #93dbe9;
+    animation-delay: -0.5660377358490566s;
+}
+
+.loading div:nth-child(2) {
+    background: #689cc5;
+    animation-delay: -0.37735849056603776s;
+}
+
+.loading div:nth-child(3) {
+    background: #5e6fa3;
+    animation-delay: -0.18867924528301888s;
+}
+
+.loading div:nth-child(4) {
+    background: #495380;
+    animation-delay: -0.9433962264150942s;
+}
+
+.Wrapper {
+    width: 100%;
+    height: 100%;
+    display: inline-block;
+    overflow: hidden;
+    background-color: #dfdfdf;
+    position: fixed;
+    z-index: 100;
+}
+
+.loading {
+    width: 150px;
+    height: 75px;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    top: calc(50% - 35px);
+    left: calc(50% - 95px);
+    //   transform: translateZ(0) scale(1);
+    backface-visibility: hidden;
+    //   transform-origin: 0 0; /* see note above */
+}
+
+.loading div {
+    box-sizing: content-box;
+}

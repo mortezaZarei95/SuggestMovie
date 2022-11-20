@@ -1,0 +1,75 @@
+@font-face {
+    font-family: "IRSansBold";
+    src: url("./assets/fonts/iran-sans/IRANSans_Bold.ttf");
+}
+
+@font-face {
+    font-family: "IRSansLight";
+    src: url("./assets/fonts/iran-sans/IRANSans_Light.ttf");
+}
+
+@font-face {
+    font-family: "IRSansMedium";
+    src: url("./assets/fonts/iran-sans/IRANSans_Medium.ttf");
+}
+
+@font-face {
+    font-family: "IRSansNumber";
+    src: url("./assets/fonts/iran-sans/IRANSansWeb(FaNum).ttf");
+}
+
+body {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    direction: ltr;
+}
+
+#root {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    list-style: none;
+}
+
+a,
+h1,
+h2,
+p,
+span,
+label,
+button {
+    margin: 0;
+    padding: 0;
+    direction: ltr;
+}
+
+h3 {
+    margin: 20px !important;
+}
+
+* {
+    font-family: IRSansMedium;
+}
+
+img {
+    font-size: 10px !important;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:focus {
+    transition: background-color 600000s 0s, red 600000s 0s;
+}

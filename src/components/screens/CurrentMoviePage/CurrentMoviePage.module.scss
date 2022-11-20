@@ -1,0 +1,36 @@
+.Wrapper {
+    max-width: 700px;
+    display: block !important;
+    margin: 0px auto !important;
+    h1 {
+        text-align: center;
+        color: rgb(0, 90, 83);
+        margin: 10px 20px;
+        font-size: 28px;
+    }
+    p,
+    span {
+        text-align: left;
+        color: rgb(0, 63, 58);
+        margin: 10px 10px 20px;
+        font-size: 14px;
+    }
+    .col {
+        margin: auto;
+        max-width: 500px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    .cardFooter {
+        padding: 20px 0;
+        display: flex;
+        justify-content: space-evenly;
+    }
+    @media screen and (max-width:400px) {
+        p,
+        span {
+            display: block !important;
+        }
+    }
+}
